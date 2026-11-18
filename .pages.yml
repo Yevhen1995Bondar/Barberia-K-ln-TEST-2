@@ -1,0 +1,157 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: content
+    label: Seiteninhalte (Barberia Köln)
+    type: file
+    path: content.json
+    fields:
+      - name: brandName
+        label: Markenname
+        type: string
+        required: true
+      - name: nav
+        label: Navigation
+        type: object
+        fields:
+          - name: servicesLabel
+            label: Menüpunkt Leistungen
+            type: string
+          - name: contactLabel
+            label: Menüpunkt Kontakt
+            type: string
+          - name: ctaLabel
+            label: Button-Text oben
+            type: string
+      - name: hero
+        label: Hero-Bereich
+        type: object
+        fields:
+          - name: kicker
+            label: Standort-Zeile über Überschrift
+            type: string
+          - name: headline
+            label: Hauptüberschrift
+            type: string
+            required: true
+          - name: subheadline
+            label: Untertitel
+            type: text
+            required: true
+          - name: ctaLabel
+            label: Button-Text
+            type: string
+            required: true
+          - name: heroImage
+            label: Hero-Bild
+            type: image
+            required: true
+          - name: heroImageAlt
+            label: Bildbeschreibung (Alt-Text)
+            type: string
+      - name: services
+        label: Leistungen
+        type: object
+        fields:
+          - name: heading
+            label: Überschrift
+            type: string
+            required: true
+          - name: subheading
+            label: Untertitel
+            type: text
+          - name: items
+            label: Leistungskarten
+            type: list
+            fields:
+              - name: title
+                label: Titel der Leistung
+                type: string
+                required: true
+              - name: description
+                label: Beschreibung
+                type: text
+                required: true
+              - name: price
+                label: Preis (in Euro)
+                type: string
+                required: true
+      - name: contact
+        label: Kontaktformular
+        type: object
+        fields:
+          - name: heading
+            label: Überschrift
+            type: string
+            required: true
+          - name: subheading
+            label: Einleitungstext
+            type: text
+          - name: nameLabel
+            label: Feldlabel Name
+            type: string
+          - name: namePlaceholder
+            label: Platzhalter Name
+            type: string
+          - name: contactLabel
+            label: Feldlabel Telefon oder E-Mail
+            type: string
+          - name: contactPlaceholder
+            label: Platzhalter Telefon oder E-Mail
+            type: string
+          - name: messageLabel
+            label: Feldlabel Nachricht
+            type: string
+          - name: messagePlaceholder
+            label: Platzhalter Nachricht
+            type: string
+          - name: submitLabel
+            label: Senden-Button
+            type: string
+          - name: submittingLabel
+            label: Lade-Text beim Senden
+            type: string
+          - name: successTitle
+            label: Erfolgsmeldung Überschrift
+            type: string
+          - name: successMessage
+            label: Erfolgsmeldung Text
+            type: text
+          - name: resetLabel
+            label: Text für neue Anfrage
+            type: string
+          - name: errorMessage
+            label: Fehlermeldung
+            type: text
+      - name: footer
+        label: Fußzeile (Footer)
+        type: object
+        fields:
+          - name: brandName
+            label: Markenname im Footer
+            type: string
+          - name: addressLabel
+            label: Label Adresse
+            type: string
+          - name: address
+            label: Adresse in Köln
+            type: string
+            required: true
+          - name: phoneLabel
+            label: Label Telefon
+            type: string
+          - name: phone
+            label: Telefonnummer
+            type: string
+            required: true
+          - name: hoursLabel
+            label: Label Öffnungszeiten
+            type: string
+          - name: hours
+            label: Öffnungszeiten
+            type: string
+          - name: copyright
+            label: Copyright-Hinweis
+            type: string

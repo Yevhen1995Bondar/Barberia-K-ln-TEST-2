@@ -1,0 +1,6 @@
+{
+  "name": "Barberia Köln",
+  "description": "Moderner Barbershop im Herzen von Köln – Präziser Haarschnitt, klassische Rasur und individuelle Bartpflege.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

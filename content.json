@@ -1,0 +1,63 @@
+{
+  "brandName": "Barberia Köln",
+  "nav": {
+    "servicesLabel": "Leistungen",
+    "contactLabel": "Kontakt",
+    "ctaLabel": "Termin buchen"
+  },
+  "hero": {
+    "kicker": "Belgisches Viertel · Köln",
+    "headline": "Präzises Handwerk für Haar und Bart im Herzen von Köln.",
+    "subheadline": "Klassische Rasur, moderner Haarschnitt und ruhige Atmosphäre – persönlich, sorgfältig und ohne Hektik.",
+    "ctaLabel": "Termin buchen",
+    "heroImage": "/images/hero-barberia.jpg",
+    "heroImageAlt": "Innenansicht der Barberia Köln mit klassischem Leder-Friseurstuhl und Walnuss-Stationen"
+  },
+  "services": {
+    "heading": "Leistungen",
+    "subheading": "Klare Preise, präzise Schnitte und individuelle Beratung bei jedem Besuch.",
+    "items": [
+      {
+        "title": "Haarschnitt & Styling",
+        "description": "Präziser Schnitt nach Typberatung inklusive Haarwäsche, entspannender Kopfmassage und Finish.",
+        "price": "38 €"
+      },
+      {
+        "title": "Bartpflege & Kontur",
+        "description": "Formgebung mit Schere und Maschine, heiße Kompresse, saubere Klingenkonturen und Bartöl.",
+        "price": "26 €"
+      },
+      {
+        "title": "Komplett-Paket",
+        "description": "Das volle Programm aus individuellem Haarschnitt und traditioneller Bartrasur mit warmem Handtuch.",
+        "price": "58 €"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Termin anfragen",
+    "subheading": "Schreiben Sie uns Ihren Wunschtermin oder Ihr Anliegen – wir melden uns kurzfristig zurück.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Max Mustermann",
+    "contactLabel": "Telefon oder E-Mail",
+    "contactPlaceholder": "+49 221 1234567 oder max@beispiel.de",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Gewünschte Leistung, Tag und ungefähre Uhrzeit...",
+    "submitLabel": "Anfrage absenden",
+    "submittingLabel": "Wird gesendet...",
+    "successTitle": "Vielen Dank für Ihre Anfrage!",
+    "successMessage": "Wir haben Ihre Nachricht erhalten und melden uns schnellstmöglich zur Terminbestätigung bei Ihnen.",
+    "resetLabel": "Weitere Anfrage senden",
+    "errorMessage": "Die Anfrage konnte leider nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an."
+  },
+  "footer": {
+    "brandName": "Barberia Köln",
+    "addressLabel": "Adresse",
+    "address": "Maastrichter Straße 42, 50672 Köln",
+    "phoneLabel": "Telefon",
+    "phone": "+49 221 9876543",
+    "hoursLabel": "Öffnungszeiten",
+    "hours": "Di – Fr: 10:00 – 19:30 · Sa: 09:30 – 16:00",
+    "copyright": "© 2026 Barberia Köln. Alle Rechte vorbehalten."
+  }
+}
