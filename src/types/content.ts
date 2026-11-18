@@ -22,6 +22,7 @@ export interface SiteContent {
   services: {
     heading: string;
     subheading: string;
+    priceLabel: string;
     items: ServiceItem[];
   };
   contact: {
@@ -39,6 +40,9 @@ export interface SiteContent {
     successMessage: string;
     resetLabel: string;
     errorMessage: string;
+    validationNameError: string;
+    validationContactError: string;
+    validationMessageError: string;
   };
   footer: {
     brandName: string;

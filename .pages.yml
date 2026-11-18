@@ -62,6 +62,9 @@ content:
           - name: subheading
             label: Untertitel
             type: text
+          - name: priceLabel
+            label: Label Preis
+            type: string
           - name: items
             label: Leistungskarten
             type: list
@@ -125,6 +128,15 @@ content:
           - name: errorMessage
             label: Fehlermeldung
             type: text
+          - name: validationNameError
+            label: Validierungshinweis Name
+            type: string
+          - name: validationContactError
+            label: Validierungshinweis Telefon/E-Mail
+            type: string
+          - name: validationMessageError
+            label: Validierungshinweis Nachricht
+            type: string
       - name: footer
         label: Fußzeile (Footer)
         type: object

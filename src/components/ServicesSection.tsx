@@ -38,7 +38,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               </div>
 
               <div className="mt-7 pt-5 border-t border-[#EFECE6] flex items-baseline justify-between gap-4">
-                <span className="text-xs font-medium text-[#71717A]">Preis</span>
+                <span className="text-xs font-medium text-[#71717A]">{services.priceLabel}</span>
                 <span className="font-display text-2xl font-semibold tabular-nums text-[#18181B]">
                   {item.price}
                 </span>

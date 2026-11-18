@@ -36,17 +36,17 @@ export function ContactSection({ contact }: ContactSectionProps) {
     setValidationError(null);
 
     if (formData.name.trim().length < 2) {
-      setValidationError('Bitte geben Sie Ihren Namen ein.');
+      setValidationError(contact.validationNameError);
       return;
     }
 
     if (!isValidContact(formData.contact)) {
-      setValidationError('Bitte geben Sie eine gültige Telefonnummer oder E-Mail-Adresse ein.');
+      setValidationError(contact.validationContactError);
       return;
     }
 
     if (formData.message.trim().length < 3) {
-      setValidationError('Bitte schreiben Sie eine kurze Nachricht zu Ihrem Terminwunsch.');
+      setValidationError(contact.validationMessageError);
       return;
     }
 

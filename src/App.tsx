@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import rawContent from '../content.json';
 import type { SiteContent } from './types/content';
 import { HeroSection } from './components/HeroSection';
@@ -5,9 +6,37 @@ import { ServicesSection } from './components/ServicesSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
-const content = rawContent as SiteContent;
+const initialContent = rawContent as SiteContent;
 
 export default function App() {
+  const [content, setContent] = useState<SiteContent>(initialContent);
+
+  useEffect(() => {
+    document.title = content.brandName;
+  }, [content.brandName]);
+
+  useEffect(() => {
+    if (!import.meta.env.DEV) {
+      return;
+    }
+
+    let cancelled = false;
+    fetch(`/content.json?t=${Date.now()}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((freshContent: SiteContent | null) => {
+        if (!cancelled && freshContent) {
+          setContent(freshContent);
+        }
+      })
+      .catch(() => {
+        // Fallback to statically imported content.json
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const scrollToContact = () => {
     const contactEl = document.getElementById('kontakt');
     if (contactEl) {
