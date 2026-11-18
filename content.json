@@ -17,23 +17,7 @@
     "heading": "Leistungen",
     "subheading": "Klare Preise, präzise Schnitte und individuelle Beratung bei jedem Besuch.",
     "priceLabel": "Preis",
-    "items": [
-      {
-        "title": "Haarschnitt & Styling",
-        "description": "Präziser Schnitt nach Typberatung inklusive Haarwäsche, entspannender Kopfmassage und Finish.",
-        "price": "38 €"
-      },
-      {
-        "title": "Bartpflege & Kontur",
-        "description": "Formgebung mit Schere und Maschine, heiße Kompresse, saubere Klingenkonturen und Bartöl.",
-        "price": "26 €"
-      },
-      {
-        "title": "Komplett-Paket",
-        "description": "Das volle Programm aus individuellem Haarschnitt und traditioneller Bartrasur mit warmem Handtuch.",
-        "price": "58 €"
-      }
-    ]
+    "items": "sdfsdfsdfsdfsdf"
   },
   "contact": {
     "heading": "Termin anfragen",
@@ -60,7 +44,7 @@
     "address": "Maastrichter Straße 42, 50672 Köln",
     "phoneLabel": "Telefon",
     "phone": "+49 221 9876543",
-    "hoursLabel": "Öffnungszeiten",
+    "hoursLabel": "fsdfsdfsdfsdfsdfdfsdfsfds",
     "hours": "Di – Fr: 10:00 – 19:30 · Sa: 09:30 – 16:00",
     "copyright": "© 2026 Barberia Köln. Alle Rechte vorbehalten."
   }
